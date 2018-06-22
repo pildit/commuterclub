@@ -36,10 +36,11 @@ class apiController extends baseController {
             'cumulative_interest',
             'ending_balance'];
 
-            // db::save_rows_to_table("amortization_schedule", $cols, $results);
+            db::save_rows_to_table("amortization_schedule", $cols, $results);
 
             // retrieve results from DB 
             $response = db::select_from_table("amortization_schedule", " user_id  =  $user_id ");
+            
             // return result
             echo $this->json_response($response, $status);
         } catch(Exception $e) {
