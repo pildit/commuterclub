@@ -67,8 +67,10 @@ public function loader()
 	{
 		$action = $this->action;
 	}
+	
 	/*** run the action ***/
-	$controller->$action();
+	 $controller->$action();
+
  }
 
 

@@ -23,9 +23,9 @@
  $registry->router->setPath (__SITE_PATH . '/controller');
 
  /*** load up the template ***/
- $registry->template = new template($registry);
+ /** $registry->template = new template($registry); */
 
  /*** load the controller ***/
- $registry->router->loader();
+  $registry->router->loader();
 
 ?>

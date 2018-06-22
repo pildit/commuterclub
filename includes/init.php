@@ -9,8 +9,6 @@
  /*** include the router class ***/
  include __SITE_PATH . '/application/' . 'router.class.php';
 
- /*** include the template class ***/
- include __SITE_PATH . '/application/' . 'template.class.php';
 
  /*** autoload model classes ***/
  function __autoload($class_name) {
